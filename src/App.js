@@ -14,6 +14,10 @@ import Footer from "./components/sections/Footer";
 import ProjectDetails from "./components/Dialog/ProjectDetails";
 import { useState } from "react";
 
+import BackgroundMusic from './components/BackgroundMusic';
+import yourMusicFile from './assets/int.mp3';
+
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -44,6 +48,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Body>
+        <BackgroundMusic url={yourMusicFile} />
           <StarCanvas />
           <AnimatePresence>
             <div>
