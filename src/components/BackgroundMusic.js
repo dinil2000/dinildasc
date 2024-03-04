@@ -8,7 +8,7 @@ const BackgroundMusic = ({ url }) => {
       url={url}
       playing={true}
       loop={true}
-      volume={0.2} // Adjust volume as needed
+      volume={0.5} // Adjust volume as needed
       width="0px" // Hide player
       height="0px" // Hide player
     />
